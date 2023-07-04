@@ -6,7 +6,7 @@ window.addEventListener('resize', (e) => {
 });
 
 
-  const pets = [
+const pets = [
     {
         key: 0,
         name: 'Katrine',
