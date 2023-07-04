@@ -1,0 +1,357 @@
+
+html{
+    max-width: 2280px;
+    min-width: 1220px;
+    display: flex;
+    justify-content: center;
+    max-height: max-content;
+    }
+    
+    body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+   }
+    
+    header{
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    top:0px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+    }
+main{
+    width: 100%;
+    margin: 0px;    
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+footer{
+    background: rgb(84,69,58);
+background: linear-gradient(122deg, rgba(84,69,58,1) 0%, rgba(32,30,31,1) 35%);
+
+}
+#logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+
+#contacts{
+    display: flex;
+justify-content: space-between;
+    padding: 20px 40px 0 40px;
+    
+    
+}
+
+#contacts-info,
+#contacts-adress{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    width: 50%;
+
+}
+
+.contact-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: #545454;
+    line-height: 0px;
+    font-size: 32px;
+}
+
+
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: #545454;
+    text-align: center;
+    line-height: 45.5px;
+    letter-spacing: 5px;
+    
+    }
+    
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+     font-weight: 400;
+    color: #545454;
+        
+    }
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #545454;
+}  
+
+#subheading{
+    color: #CDCDCD;
+    margin-bottom: 42px;
+    }
+
+#sublogo, a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #545454;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+
+} 
+
+#sublogo{
+    line-height: 0px;
+}
+
+a:hover{
+    border-bottom: 2px solid #0f0e0e;
+    transition: 0.8s;
+
+}
+
+.footer-h4{
+    color: #F1CDB3 ;
+}
+
+#contacts-info > h3, #contacts-adress > h3{
+    color: #FFFFFF;
+}
+
+#contacts-info > h4, #contacts-adress > h4{
+    color: #F1CDB3;
+
+}
+
+.btn{
+    border-radius: 50px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    background-color: #F1CDB3;
+    transition: 3s;
+    
+}
+
+.btn:hover{
+    background-color:  #cf8a59f7;
+    font-style: italic;
+    transition: 3s;
+    cursor: pointer;
+}
+
+#title{
+    width: 50%;
+}
+
+#pets-cards{
+display: grid;
+grid-template-columns: repeat(4, 270px);
+grid-gap: 40px;
+padding: 20px 0;
+
+}
+
+.pet-card{
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 30px 0;
+    /* gap: 30px; */
+}
+
+.pet-card > button {
+    border: 2px solid #F1CDB3;
+    width: 187px;
+    height: 52px;
+    background-color: #FAFAFA ;
+    cursor: pointer;
+}
+
+.scroll-btn{
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100%;
+    margin-top: 45px;
+}
+
+#checked-section{
+    border-bottom: #F1CDB3 solid 2px;
+}
+
+#nav-420px{
+    display: none;
+}
+#burger-contain{
+    display: none;
+}
+
+
+@media screen and (max-width: 1219px){
+    html{
+        min-width: 830px;
+        width: 100%;
+        max-height: max-content;
+    
+    }
+    header{
+        width: 90%;
+    }
+    main{
+        width: 100%;
+    }
+    #nav-420px{
+        display: none;
+    }
+    #burger-contain{
+        display: none;
+    }
+
+    #pets-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 270px);
+        grid-gap: 40px;
+        padding-top: 20px;
+        
+        }
+}
+
+@media screen and (max-width: 830px){
+    html{
+        min-width: 500px;
+        width: 100%;
+
+    }
+
+    main{
+        padding: 20px 0;
+    }
+
+    nav{
+        display: none;
+    }
+
+    header{
+        width: 89%;
+        padding: 0 0 0 20px;
+        margin: 0px;
+    }
+
+    #burger-contain{
+        background-color: inherit;
+        display: flex;
+        justify-content: end;
+        padding: 50px 0px 70px 20px;
+        border-radius: 50px;
+        transition: background-color 0.4s ;
+        transition-timing-function: ease-in-out;
+
+    }
+    #burger{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        background-color: inherit; 
+        border: none;
+         outline: none;
+         transition: 0.3s;
+ }
+    .line-btn{
+        width: 100%;
+        height: 2px;
+
+        background-color: #292929;
+    }
+
+    #sidebar{
+    position: fixed;
+    top:105px;
+    justify-content: center;
+    align-items: center;
+    right: 5px;
+     width: 320px;
+     height: 0px;
+     background-color: #292929;
+     color: #F1CDB3;
+     border-radius: 50px;
+     /* display: none; */
+     transition: height 0.4s;
+     transition-timing-function: linear;
+    }
+
+    #nav-420px{
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding-top: 60px;
+        transition: opacity 0.4s;
+        color: #F1CDB3;
+
+    }
+
+
+    #sidebar > nav > a{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 32px;
+    }
+
+    #pets-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 270px);
+        grid-gap: 40px;
+        padding-top: 20px;
+        
+        }
+
+#contacts{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-dog{
+    display: none;
+}
+
+}
