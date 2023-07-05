@@ -250,9 +250,9 @@ padding: 20px 0;
         }
 }
 
-@media screen and (max-width: 830px){
+@media screen and (max-width: 720px){
     html{
-        min-width: 500px;
+        min-width: 320px;
         width: 100%;
 
     }
